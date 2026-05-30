@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova AI</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: white;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 8%;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .hero {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        max-width: 600px;
+        font-size: 18px;
+        opacity: 0.8;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        background: #3b82f6;
+        color: white;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .btn:hover {
+        background: #2563eb;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        padding: 60px 8%;
+      }
+
+      /* 🐞 BUG IS HERE */
+      .feature-card {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 25px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        width: 120%;
+      }
+
+      .feature-card h3 {
+        margin-bottom: 10px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Nova AI</div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1>Build Faster With AI</h1>
+      <p>
+        Create websites, automate workflows, and launch your ideas with
+        intelligent AI-powered tools.
+      </p>
+
+      <button class="btn">Get Started</button>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>⚡ Fast</h3>
+        <p>Generate solutions in seconds.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🧠 Smart</h3>
+        <p>Powered by advanced AI models.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>🔒 Secure</h3>
+        <p>Your data stays protected.</p>
+      </div>
+    </section>
+
+    <footer>© 2026 Nova AI. All rights reserved.</footer>
+  </body>
+</html>
